@@ -4,7 +4,7 @@ import BookRow from "./BookRow";
 class AuthorDetail extends Component {
   render() {
     let author = this.props.author;
-    console.log(author);
+    console.log("Author: ", author);
 
     let books = author.books.map(book => (
       <BookRow book={book} key={book.title} author={author} />
